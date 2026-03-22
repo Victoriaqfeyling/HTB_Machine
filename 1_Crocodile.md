@@ -165,6 +165,12 @@ Descargamos ambos archivos a nuestra máquina atacante:
 get allowed.userlist
 get allowed.userlist.passwd
 ```
+<img width="1182" height="81" alt="image" src="https://github.com/user-attachments/assets/400cc261-641f-431d-acbd-9a213129000f" />
+
+<img width="1890" height="229" alt="image" src="https://github.com/user-attachments/assets/d438bea3-3f78-473b-9dba-0a688f2503f3" />
+
+<img width="1920" height="265" alt="image" src="https://github.com/user-attachments/assets/c62c0294-5286-4f85-8a51-5f0bbbfc3e4c" />
+
 
 También podríamos usar `mget *` si quisiéramos bajar varios archivos a la vez, pero en este caso alcanza con descargar los dos archivos relevantes.
 
@@ -177,6 +183,7 @@ Una vez descargados, confirmamos que estén presentes:
 ```bash
 ls -la
 ```
+<img width="1491" height="285" alt="image" src="https://github.com/user-attachments/assets/16270250-4311-479e-a9f2-9fe678d17d6a" />
 
 Luego leemos su contenido:
 
@@ -184,6 +191,11 @@ Luego leemos su contenido:
 cat allowed.userlist
 cat allowed.userlist.passwd
 ```
+
+<img width="687" height="196" alt="image" src="https://github.com/user-attachments/assets/d3b73e3e-77c1-4b17-a7d3-ee6ca9db17c9" />
+
+<img width="637" height="162" alt="image" src="https://github.com/user-attachments/assets/5d2be688-33ea-4311-9619-ec4db04c3462" />
+
 
 ---
 
