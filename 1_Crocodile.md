@@ -25,6 +25,11 @@ Esta máquina es ideal para reforzar un concepto muy importante en pentesting:
 > una mala configuración aparentemente simple puede derivar en un compromiso completo del sistema o de la aplicación.
 
 ---
+Para iniciar el laboratorio de HTB nos conectamos a la vpn y realizamos un ```ip a``` para ver si responde. Seguidamente, copiamos la IP de la máquina a resolver y mediante ```ping -c 1 <IP>``` ************
+
+<img width="1320" height="286" alt="image" src="https://github.com/user-attachments/assets/915146a1-ac3a-4567-a517-b1f57dae02a7" />
+
+
 
 # 1. Reconocimiento inicial
 
@@ -44,6 +49,9 @@ nmap -sC -sV -p- -T4 <IP>
 ---
 
 ## Resultado esperado
+
+<img width="858" height="673" alt="image" src="https://github.com/user-attachments/assets/0f1ff629-207b-46a5-b2c6-2ea10d4945c7" />
+
 
 ```bash
 PORT   STATE SERVICE VERSION
@@ -97,6 +105,8 @@ Using binary mode to transfer files.
 
 ---
 
+<img width="838" height="261" alt="image" src="https://github.com/user-attachments/assets/3fe49d50-23c0-4c5e-b076-e27287880a1e" />
+
 ## Análisis
 
 Si el login anónimo funciona, estamos ante una **mala configuración de seguridad**.
@@ -117,6 +127,7 @@ Una vez autenticados, listamos el contenido del directorio remoto:
 ```bash
 ls
 ```
+<img width="1786" height="210" alt="image" src="https://github.com/user-attachments/assets/a168b474-c118-4473-acef-f0156d4310a1" />
 
 ## Resultado esperado
 
