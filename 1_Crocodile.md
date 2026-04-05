@@ -44,14 +44,13 @@ nmap -sC -sV -p- -T4 <IP>
 
 * `-sC` → ejecuta scripts NSE básicos por defecto.
 * `-sV` → detecta versiones de servicios.
-* `-p-` → escanea todos los puertos TCP.
-* `-T4` → acelera el escaneo manteniendo un equilibrio razonable.
 
 ---
 
 ## Resultado esperado
 
-<img width="858" height="673" alt="image" src="https://github.com/user-attachments/assets/0f1ff629-207b-46a5-b2c6-2ea10d4945c7" />
+<img width="1294" height="639" alt="image" src="https://github.com/user-attachments/assets/749f8fbf-87f5-4700-ba14-94b6ab7112cb" />
+
 
 
 ```bash
