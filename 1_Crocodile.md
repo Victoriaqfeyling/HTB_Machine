@@ -290,6 +290,7 @@ En esta instancia, el laboratorio normalmente revela la flag directamente dentro
 * Validarla en Hack The Box.
 
 ---
+<img width="1030" height="706" alt="image" src="https://github.com/user-attachments/assets/5ac04502-b65b-47e9-a580-2df7cbc4aff0" />
 
 # 9. Resumen de la cadena de compromiso
 
