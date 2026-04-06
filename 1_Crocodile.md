@@ -182,7 +182,8 @@ Una vez descargados, confirmamos que estén presentes:
 ```bash
 ls -la
 ```
-<img width="1491" height="285" alt="image" src="https://github.com/user-attachments/assets/16270250-4311-479e-a9f2-9fe678d17d6a" />
+<img width="1374" height="232" alt="image" src="https://github.com/user-attachments/assets/684c2bf1-23cb-40e5-96bd-967f80ebe46c" />
+
 
 Luego leemos su contenido:
 
