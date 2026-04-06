@@ -123,7 +123,8 @@ Una vez autenticados, listamos el contenido del directorio remoto:
 ```bash
 ls
 ```
-<img width="1786" height="210" alt="image" src="https://github.com/user-attachments/assets/a168b474-c118-4473-acef-f0156d4310a1" />
+<img width="1011" height="153" alt="image" src="https://github.com/user-attachments/assets/b52e3b14-dad0-4c01-ad63-63f027025360" />
+
 
 ## Resultado esperado
 
