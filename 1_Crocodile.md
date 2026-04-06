@@ -245,7 +245,7 @@ el cual nos muestra lo siguiente:
 <img width="1111" height="685" alt="image" src="https://github.com/user-attachments/assets/718653d9-eaa3-4911-a597-d257525ba93a" />
 
 ---
-
+Observamos que aparece un dashboard, el cual al colocarlo junto a la IP nos lleva al Login.
 # 7. Prueba de credenciales encontradas
 
 Con los usuarios y contraseñas obtenidos desde FTP, comenzamos a probar combinaciones en el login web.
@@ -272,12 +272,16 @@ Password: <valor obtenido en el archivo>
 Después de probar la combinación correcta, el login es exitoso y obtenemos acceso a una sección restringida de la aplicación.
 
 ---
+<img width="1917" height="832" alt="image" src="https://github.com/user-attachments/assets/23b3ee3c-b888-4ae4-a3d7-0d3fb768e694" />
 
 # 8. Acceso al panel y obtención de la flag
 
 Una vez autenticados correctamente, ingresamos al panel o sección interna del sitio.
 
 En esta instancia, el laboratorio normalmente revela la flag directamente dentro de la interfaz.
+
+<img width="1887" height="807" alt="image" src="https://github.com/user-attachments/assets/b9069324-2628-4303-9c39-989cf2375846" />
+
 
 ### Acción final
 
