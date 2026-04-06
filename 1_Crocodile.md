@@ -162,11 +162,8 @@ Descargamos ambos archivos a nuestra máquina atacante:
 get allowed.userlist
 get allowed.userlist.passwd
 ```
-<img width="1182" height="81" alt="image" src="https://github.com/user-attachments/assets/400cc261-641f-431d-acbd-9a213129000f" />
 
-<img width="1890" height="229" alt="image" src="https://github.com/user-attachments/assets/d438bea3-3f78-473b-9dba-0a688f2503f3" />
-
-<img width="1920" height="265" alt="image" src="https://github.com/user-attachments/assets/c62c0294-5286-4f85-8a51-5f0bbbfc3e4c" />
+<img width="1615" height="342" alt="image" src="https://github.com/user-attachments/assets/5a848276-1982-44bb-90fc-c6b5c4a30a5a" />
 
 
 También podríamos usar `mget *` si quisiéramos bajar varios archivos a la vez, pero en este caso alcanza con descargar los dos archivos relevantes.
@@ -180,7 +177,8 @@ Una vez descargados, confirmamos que estén presentes:
 ```bash
 ls -la
 ```
-<img width="1491" height="285" alt="image" src="https://github.com/user-attachments/assets/16270250-4311-479e-a9f2-9fe678d17d6a" />
+<img width="1071" height="193" alt="image" src="https://github.com/user-attachments/assets/1ff73324-e57d-4718-8f83-b2d19a571473" />
+
 
 Luego leemos su contenido:
 
@@ -188,11 +186,9 @@ Luego leemos su contenido:
 cat allowed.userlist
 cat allowed.userlist.passwd
 ```
+<img width="468" height="121" alt="image" src="https://github.com/user-attachments/assets/57728fce-9ad5-4f30-9986-f86d1c0ae45a" />
 
-<img width="687" height="196" alt="image" src="https://github.com/user-attachments/assets/d3b73e3e-77c1-4b17-a7d3-ee6ca9db17c9" />
-
-<img width="637" height="162" alt="image" src="https://github.com/user-attachments/assets/5d2be688-33ea-4311-9619-ec4db04c3462" />
-
+<img width="553" height="136" alt="image" src="https://github.com/user-attachments/assets/778e7f13-13ef-4e5c-bf2f-8d9cce993dbb" />
 
 ---
 
@@ -230,6 +226,8 @@ Abrimos el sitio en el navegador:
 ```text
 http://<IP>
 ```
+<img width="1710" height="702" alt="image" src="https://github.com/user-attachments/assets/2137bd8b-c055-4054-8d1a-a35a6ceec097" />
+
 
 ## Qué observar
 
@@ -241,6 +239,10 @@ Al cargar la web, debemos prestar atención a:
 * si hay pistas sobre usuarios o paneles administrativos.
 
 En esta máquina, lo importante es detectar que existe una **interfaz de autenticación web**.
+Al querer iniciar el login nos damos cuenta que a simple vista no aparece por lo que probamos  ´´´http://<IP>/login´´´ y no aparece, probamos ´´´http://<IP>/usuario´´´ y no podemos acceder. Seguidamente en nuestra shell realizamos el comando <img width="1089" height="42" alt="image" src="https://github.com/user-attachments/assets/76bb2e91-adec-45cc-8d17-85ea7c68641b" />
+el cual nos muestra lo siguiente:
+
+<img width="1111" height="685" alt="image" src="https://github.com/user-attachments/assets/718653d9-eaa3-4911-a597-d257525ba93a" />
 
 ---
 
