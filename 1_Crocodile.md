@@ -27,7 +27,6 @@ Esta máquina es ideal para reforzar un concepto muy importante en pentesting:
 ---
 Para iniciar el laboratorio de HTB nos conectamos a la vpn y realizamos un ```ip a``` para ver si responde. Seguidamente, copiamos la IP de la máquina a resolver y mediante ```ping -c 1 <IP>``` ************
 
-<img width="1278" height="256" alt="image" src="https://github.com/user-attachments/assets/4fda85da-01ba-4aeb-96fd-dee9af70259d" />
 
 
 
@@ -44,13 +43,14 @@ nmap -sC -sV -p- -T4 <IP>
 
 * `-sC` → ejecuta scripts NSE básicos por defecto.
 * `-sV` → detecta versiones de servicios.
+* `-p-` → escanea todos los puertos TCP.
+* `-T4` → acelera el escaneo manteniendo un equilibrio razonable.
 
 ---
 
 ## Resultado esperado
 
-<img width="1294" height="639" alt="image" src="https://github.com/user-attachments/assets/749f8fbf-87f5-4700-ba14-94b6ab7112cb" />
-
+<img width="858" height="673" alt="image" src="https://github.com/user-attachments/assets/0f1ff629-207b-46a5-b2c6-2ea10d4945c7" />
 
 
 ```bash
@@ -105,8 +105,7 @@ Using binary mode to transfer files.
 
 ---
 
-<img width="747" height="220" alt="image" src="https://github.com/user-attachments/assets/cd5f1eec-3b23-40d6-92e7-557d39775ec0" />
-
+<img width="838" height="261" alt="image" src="https://github.com/user-attachments/assets/3fe49d50-23c0-4c5e-b076-e27287880a1e" />
 
 ## Análisis
 
@@ -128,8 +127,7 @@ Una vez autenticados, listamos el contenido del directorio remoto:
 ```bash
 ls
 ```
-<img width="1347" height="213" alt="image" src="https://github.com/user-attachments/assets/daa8c201-e05d-4e46-b3e9-e939db951d73" />
-
+<img width="1786" height="210" alt="image" src="https://github.com/user-attachments/assets/a168b474-c118-4473-acef-f0156d4310a1" />
 
 ## Resultado esperado
 
@@ -167,8 +165,11 @@ Descargamos ambos archivos a nuestra máquina atacante:
 get allowed.userlist
 get allowed.userlist.passwd
 ```
-<img width="1917" height="433" alt="image" src="https://github.com/user-attachments/assets/e80ca1b7-457b-46cd-a1ac-de76d42498ab" />
+<img width="1182" height="81" alt="image" src="https://github.com/user-attachments/assets/400cc261-641f-431d-acbd-9a213129000f" />
 
+<img width="1890" height="229" alt="image" src="https://github.com/user-attachments/assets/d438bea3-3f78-473b-9dba-0a688f2503f3" />
+
+<img width="1920" height="265" alt="image" src="https://github.com/user-attachments/assets/c62c0294-5286-4f85-8a51-5f0bbbfc3e4c" />
 
 
 También podríamos usar `mget *` si quisiéramos bajar varios archivos a la vez, pero en este caso alcanza con descargar los dos archivos relevantes.
@@ -182,8 +183,7 @@ Una vez descargados, confirmamos que estén presentes:
 ```bash
 ls -la
 ```
-<img width="1374" height="232" alt="image" src="https://github.com/user-attachments/assets/684c2bf1-23cb-40e5-96bd-967f80ebe46c" />
-
+<img width="1491" height="285" alt="image" src="https://github.com/user-attachments/assets/16270250-4311-479e-a9f2-9fe678d17d6a" />
 
 Luego leemos su contenido:
 
@@ -192,8 +192,10 @@ cat allowed.userlist
 cat allowed.userlist.passwd
 ```
 
-<img width="468" height="150" alt="image" src="https://github.com/user-attachments/assets/561991b4-7887-43c2-bdc4-8c56501a80ab" />
-<img width="681" height="156" alt="image" src="https://github.com/user-attachments/assets/462a50ea-1890-4a62-a298-49f604c8a109" />
+<img width="687" height="196" alt="image" src="https://github.com/user-attachments/assets/d3b73e3e-77c1-4b17-a7d3-ee6ca9db17c9" />
+
+<img width="637" height="162" alt="image" src="https://github.com/user-attachments/assets/5d2be688-33ea-4311-9619-ec4db04c3462" />
+
 
 ---
 
@@ -243,22 +245,8 @@ Al cargar la web, debemos prestar atención a:
 
 En esta máquina, lo importante es detectar que existe una **interfaz de autenticación web**.
 
-
-<img width="1708" height="742" alt="image" src="https://github.com/user-attachments/assets/47243da0-7481-4fe4-b5bc-25def447331a" />
-Como vemos, en ningún lugar de la página aparece para poder realizar el login por lo que debemos realizar el comando 
-```bash
-gobuster dir -u http://10.129.87.249 -w /usr/share/wordlists/dirb/common.txt
-```
-
-<img width="1176" height="678" alt="image" src="https://github.com/user-attachments/assets/06fcd147-fce9-4f28-a0ba-5b20e9c2a7e8" />
-
-De esta manera vemos como aparece /dashboard con un Status 301 que es sospechoso ya que muchas veces ahí se encuentra el panel de administración.
-Probamos colocar /dashboard al lado de la IP y accedemos al login de forma exitosa.
-
-<img width="1396" height="445" alt="image" src="https://github.com/user-attachments/assets/9512cf54-e8f4-4f9e-896a-3ff7d78bd284" />
-
-
 ---
+
 # 7. Prueba de credenciales encontradas
 
 Con los usuarios y contraseñas obtenidos desde FTP, comenzamos a probar combinaciones en el login web.
@@ -279,8 +267,6 @@ Password: <valor obtenido en el archivo>
 > En lugar de pensar solo en “fuerza bruta”, en este caso el valor real del ejercicio está en la **reutilización de credenciales expuestas**.
 
 ---
-<img width="1915" height="811" alt="image" src="https://github.com/user-attachments/assets/cfbbb78d-a356-435c-bdac-bb05fb28be38" />
-
 
 ## Resultado esperado
 
@@ -294,9 +280,6 @@ Una vez autenticados correctamente, ingresamos al panel o sección interna del s
 
 En esta instancia, el laboratorio normalmente revela la flag directamente dentro de la interfaz.
 
-<img width="1905" height="769" alt="image" src="https://github.com/user-attachments/assets/ac08fe88-6a14-4db2-9171-755ffb002f66" />
-
-
 ### Acción final
 
 * Buscar la flag en la pantalla.
@@ -304,8 +287,6 @@ En esta instancia, el laboratorio normalmente revela la flag directamente dentro
 * Validarla en Hack The Box.
 
 ---
-<img width="1389" height="708" alt="image" src="https://github.com/user-attachments/assets/ad9be95e-042a-4470-a1a5-c4dc41c989c7" />
-
 
 # 9. Resumen de la cadena de compromiso
 
@@ -513,3 +494,4 @@ Por eso, este laboratorio es un excelente ejemplo de cómo un atacante puede ava
 ## ✅ Estado final
 
 **Objetivo cumplido: acceso web obtenido mediante reutilización de credenciales expuestas desde un servicio FTP anónimo.**
+
