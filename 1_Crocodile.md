@@ -28,6 +28,7 @@ Esta máquina es ideal para reforzar un concepto muy importante en pentesting:
 Para iniciar el laboratorio de HTB nos conectamos a la vpn y realizamos un ```ip a``` para ver si responde. Seguidamente, copiamos la IP de la máquina a resolver y mediante ```ping -c 1 <IP>``` ************
 
 
+<img width="813" height="192" alt="image" src="https://github.com/user-attachments/assets/c724f3ea-d185-4eab-b975-d15096d6dbe3" />
 
 
 
