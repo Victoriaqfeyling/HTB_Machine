@@ -100,8 +100,8 @@ Using binary mode to transfer files.
 ```
 
 ---
+<img width="603" height="169" alt="image" src="https://github.com/user-attachments/assets/07293812-e2e8-4c98-9257-470fa5305a33" />
 
-<img width="838" height="261" alt="image" src="https://github.com/user-attachments/assets/3fe49d50-23c0-4c5e-b076-e27287880a1e" />
 
 ## Análisis
 
