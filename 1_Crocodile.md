@@ -167,11 +167,8 @@ Descargamos ambos archivos a nuestra máquina atacante:
 get allowed.userlist
 get allowed.userlist.passwd
 ```
-<img width="1182" height="81" alt="image" src="https://github.com/user-attachments/assets/400cc261-641f-431d-acbd-9a213129000f" />
+<img width="1917" height="433" alt="image" src="https://github.com/user-attachments/assets/e80ca1b7-457b-46cd-a1ac-de76d42498ab" />
 
-<img width="1890" height="229" alt="image" src="https://github.com/user-attachments/assets/d438bea3-3f78-473b-9dba-0a688f2503f3" />
-
-<img width="1920" height="265" alt="image" src="https://github.com/user-attachments/assets/c62c0294-5286-4f85-8a51-5f0bbbfc3e4c" />
 
 
 También podríamos usar `mget *` si quisiéramos bajar varios archivos a la vez, pero en este caso alcanza con descargar los dos archivos relevantes.
