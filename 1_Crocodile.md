@@ -243,6 +243,10 @@ Al cargar la web, debemos prestar atención a:
 
 En esta máquina, lo importante es detectar que existe una **interfaz de autenticación web**.
 
+
+<img width="1708" height="742" alt="image" src="https://github.com/user-attachments/assets/47243da0-7481-4fe4-b5bc-25def447331a" />
+
+
 ---
 
 # 7. Prueba de credenciales encontradas
