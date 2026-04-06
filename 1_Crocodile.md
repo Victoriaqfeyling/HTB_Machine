@@ -192,9 +192,7 @@ cat allowed.userlist
 cat allowed.userlist.passwd
 ```
 
-<img width="687" height="196" alt="image" src="https://github.com/user-attachments/assets/d3b73e3e-77c1-4b17-a7d3-ee6ca9db17c9" />
-
-<img width="637" height="162" alt="image" src="https://github.com/user-attachments/assets/5d2be688-33ea-4311-9619-ec4db04c3462" />
+<img width="732" height="358" alt="image" src="https://github.com/user-attachments/assets/800fcce4-edc1-4432-b364-c8290a8e3221" />
 
 
 ---
