@@ -37,16 +37,14 @@ Para iniciar el laboratorio de HTB nos conectamos a la vpn y realizamos un ```ip
 Como primer paso, realizamos un escaneo con **Nmap** para identificar puertos abiertos, servicios y versiones.
 
 ```bash
-nmap -sC -sV -p- -T4 <IP>
+nmap -sC -sV <IP>
 ```
+<img width="816" height="493" alt="image" src="https://github.com/user-attachments/assets/3fcd5e8e-6e3a-41e4-ac25-551524045457" />
 
 ## Explicación del comando
 
 * `-sC` → ejecuta scripts NSE básicos por defecto.
 * `-sV` → detecta versiones de servicios.
-* `-p-` → escanea todos los puertos TCP.
-* `-T4` → acelera el escaneo manteniendo un equilibrio razonable.
-
 ---
 
 ## Resultado esperado
