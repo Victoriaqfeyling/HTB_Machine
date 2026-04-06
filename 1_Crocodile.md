@@ -279,6 +279,8 @@ Password: <valor obtenido en el archivo>
 > En lugar de pensar solo en “fuerza bruta”, en este caso el valor real del ejercicio está en la **reutilización de credenciales expuestas**.
 
 ---
+<img width="1915" height="811" alt="image" src="https://github.com/user-attachments/assets/cfbbb78d-a356-435c-bdac-bb05fb28be38" />
+
 
 ## Resultado esperado
 
@@ -292,6 +294,9 @@ Una vez autenticados correctamente, ingresamos al panel o sección interna del s
 
 En esta instancia, el laboratorio normalmente revela la flag directamente dentro de la interfaz.
 
+<img width="1905" height="769" alt="image" src="https://github.com/user-attachments/assets/ac08fe88-6a14-4db2-9171-755ffb002f66" />
+
+
 ### Acción final
 
 * Buscar la flag en la pantalla.
@@ -299,6 +304,8 @@ En esta instancia, el laboratorio normalmente revela la flag directamente dentro
 * Validarla en Hack The Box.
 
 ---
+<img width="1389" height="708" alt="image" src="https://github.com/user-attachments/assets/ad9be95e-042a-4470-a1a5-c4dc41c989c7" />
+
 
 # 9. Resumen de la cadena de compromiso
 
