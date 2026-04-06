@@ -49,9 +49,6 @@ nmap -sC -sV <IP>
 
 ## Resultado esperado
 
-<img width="858" height="673" alt="image" src="https://github.com/user-attachments/assets/0f1ff629-207b-46a5-b2c6-2ea10d4945c7" />
-
-
 ```bash
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 3.0.3
