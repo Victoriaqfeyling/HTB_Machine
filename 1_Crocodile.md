@@ -105,7 +105,8 @@ Using binary mode to transfer files.
 
 ---
 
-<img width="838" height="261" alt="image" src="https://github.com/user-attachments/assets/3fe49d50-23c0-4c5e-b076-e27287880a1e" />
+<img width="747" height="220" alt="image" src="https://github.com/user-attachments/assets/cd5f1eec-3b23-40d6-92e7-557d39775ec0" />
+
 
 ## Análisis
 
