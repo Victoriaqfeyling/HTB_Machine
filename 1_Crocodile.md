@@ -245,10 +245,20 @@ En esta máquina, lo importante es detectar que existe una **interfaz de autenti
 
 
 <img width="1708" height="742" alt="image" src="https://github.com/user-attachments/assets/47243da0-7481-4fe4-b5bc-25def447331a" />
+Como vemos, en ningún lugar de la página aparece para poder realizar el login por lo que debemos realizar el comando 
+```bash
+gobuster dir -u http://10.129.87.249 -w /usr/share/wordlists/dirb/common.txt
+```
+
+<img width="1176" height="678" alt="image" src="https://github.com/user-attachments/assets/06fcd147-fce9-4f28-a0ba-5b20e9c2a7e8" />
+
+De esta manera vemos como aparece /dashboard con un Status 301 que es sospechoso ya que muchas veces ahí se encuentra el panel de administración.
+Probamos colocar /dashboard al lado de la IP y accedemos al login de forma exitosa.
+
+<img width="1396" height="445" alt="image" src="https://github.com/user-attachments/assets/9512cf54-e8f4-4f9e-896a-3ff7d78bd284" />
 
 
 ---
-
 # 7. Prueba de credenciales encontradas
 
 Con los usuarios y contraseñas obtenidos desde FTP, comenzamos a probar combinaciones en el login web.
