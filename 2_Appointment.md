@@ -7,7 +7,8 @@ Tipo:
 ```bash
 nmap -sC -sV <IP> -v
 ```
-######IMAGEN
+
+<img width="909" height="228" alt="image" src="https://github.com/user-attachments/assets/b6f54875-1a63-4ebc-8095-77be0520284c" />
 
 80/TCP está libre. El servicio es .http
 
