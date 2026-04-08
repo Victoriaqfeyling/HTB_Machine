@@ -12,10 +12,9 @@ nmap -sC -sV <IP> -v
 
 80/TCP está libre. El servicio es .http
 
-Puedes pegar en el navegador y deberías ver esto:target ip
+Puedes pegar en el navegador y deberías ver esto: ```target ip```
 
-#####IMAGEN
-
+<img width="1866" height="805" alt="image" src="https://github.com/user-attachments/assets/67854b02-98ed-49eb-9935-31b9aa92755f" />
 
 
 
