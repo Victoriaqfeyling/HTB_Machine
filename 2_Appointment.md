@@ -1,7 +1,6 @@
 Máquina: Appointment
 Escaneo con nmap
 Tipo:
-```
-bash
+```bash
 nmap -sC -sV <IP> -v
 ```
