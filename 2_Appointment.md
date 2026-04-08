@@ -1,6 +1,8 @@
 * **Máquina:** Appointment
 * **Plataforma:** Hack The Box - Starting Point
-  
+
+El primer paso será iniciar la máquina correspondiente (para lo que previamente tendremos que tener establecida nuestra conexión VPN)
+
 Escaneo con nmap
 Tipo:
 
